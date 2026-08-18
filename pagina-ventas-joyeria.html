@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyería &amp; Accesorios | Colección Selecta</title>
+<style>
+  :root{
+    --gold:#c9a24a;
+    --gold-light:#e8d5a3;
+    --dark:#1a1613;
+    --dark2:#231e1a;
+    --cream:#faf6ef;
+    --muted:#9a9086;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Georgia', 'Times New Roman', serif;
+    background:var(--cream);
+    color:var(--dark);
+    line-height:1.6;
+  }
+  a{text-decoration:none;color:inherit;}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);
+    color:var(--cream);
+    text-align:center;
+    padding:90px 24px 80px;
+  }
+  .hero .eyebrow{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:13px;
+    color:var(--gold-light);
+    margin-bottom:18px;
+    font-family:Arial,sans-serif;
+  }
+  .hero h1{
+    font-size:44px;
+    font-weight:400;
+    margin-bottom:18px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .hero p{
+    max-width:520px;
+    margin:0 auto 34px;
+    color:#d8d2c8;
+    font-size:17px;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--dark);
+    padding:15px 38px;
+    border-radius:30px;
+    font-family:Arial,sans-serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:0.5px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn:hover{background:var(--gold-light);transform:translateY(-2px);}
+
+  /* CATEGORY STRIP */
+  .categories{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+    padding:36px 20px;
+    background:#fff;
+    border-bottom:1px solid #eee2c8;
+  }
+  .categories span{
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--dark);
+    background:var(--cream);
+    border:1px solid var(--gold-light);
+    padding:9px 20px;
+    border-radius:20px;
+  }
+
+  /* SECTION HEADINGS */
+  .section{padding:64px 24px;max-width:1100px;margin:0 auto;}
+  .section h2{
+    text-align:center;
+    font-size:30px;
+    font-weight:400;
+    margin-bottom:10px;
+  }
+  .section .sub{
+    text-align:center;
+    color:var(--muted);
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    margin-bottom:44px;
+  }
+
+  /* PRODUCT GRID */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:28px;
+  }
+  .card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 18px rgba(0,0,0,0.06);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(0,0,0,0.1);}
+  .card-img{
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:46px;
+    background:linear-gradient(135deg,var(--gold-light),var(--gold));
+    color:#fff;
+  }
+  .card-body{padding:20px;}
+  .card-body .cat{
+    font-family:Arial,sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:6px;
+    display:block;
+  }
+  .card-body h3{
+    font-size:19px;
+    font-weight:400;
+    margin-bottom:8px;
+  }
+  .card-body p.desc{
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:16px;
+    min-height:36px;
+  }
+  .card-footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    font-family:Arial,sans-serif;
+  }
+  .price{font-weight:700;font-size:16px;color:var(--dark);}
+  .card-btn{
+    background:var(--dark);
+    color:var(--cream);
+    padding:9px 18px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:700;
+  }
+  .card-btn:hover{background:var(--gold);color:var(--dark);}
+
+  /* TRUST STRIP */
+  .trust{
+    background:var(--dark);
+    color:var(--cream);
+    padding:50px 24px;
+    text-align:center;
+  }
+  .trust-grid{
+    max-width:900px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    font-family:Arial,sans-serif;
+  }
+  .trust-grid div h4{color:var(--gold-light);font-size:16px;margin-bottom:6px;}
+  .trust-grid div p{font-size:13px;color:#c9c2b6;}
+
+  /* FOOTER */
+  footer{
+    text-align:center;
+    padding:40px 20px;
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    color:var(--muted);
+    background:#fff;
+  }
+  footer .disclosure{
+    max-width:600px;
+    margin:0 auto 12px;
+    font-size:11px;
+    line-height:1.6;
+  }
+
+  @media(max-width:600px){
+    .hero h1{font-size:32px;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="eyebrow">Colección Curada</div>
+    <h1>Joyería y Accesorios que Cuentan tu Historia</h1>
+    <p>Piezas seleccionadas a mano: collares, pulseras, aretes y relojes para cada estilo. Calidad, elegancia y envío confiable.</p>
+    <a href="#productos" class="btn">Ver la Colección</a>
+  </section>
+
+  <!-- ===================== CATEGORY STRIP ===================== -->
+  <div class="categories">
+    <span>Collares</span>
+    <span>Pulseras</span>
+    <span>Aretes</span>
+    <span>Relojes</span>
+    <span>Anillos</span>
+  </div>
+
+  <!-- ===================== PRODUCTOS ===================== -->
+  <section class="section" id="productos">
+    <h2>Piezas Destacadas</h2>
+    <p class="sub">Selección de tendencia esta temporada</p>
+
+    <div class="grid">
+
+      <!-- PRODUCTO 1 -->
+      <div class="card">
+        <div class="card-img">💛</div>
+        <div class="card-body">
+          <span class="cat">Collares</span>
+          <h3>Cadena Cubana Dorada</h3>
+          <p class="desc">Acero inoxidable chapado en oro, resistente al agua.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/397345682731?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBu4%2F44crDiuRQWipJ9IFcoXed%2FtK7SbgURUPY3Xw9nM7z7GyD5E8nIm1tqcT0%2F8IK16Yk98%2FKCjbHf9YcaX67Uk2JO3jL30YcYnQhUuRENAGuZbn7h5jZeHNDv15v4DxDqJxhErSNiT5RBPviAO0nzvhaxWQQ%2B4t6txWctSuNPVj7cKkMsih1sFaH71Foub8g%3D&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="card">
+        <div class="card-img">🌙</div>
+        <div class="card-body">
+          <span class="cat">Collares</span>
+          <h3>Colgante Fases de la Luna</h3>
+          <p class="desc">Diseño celestial minimalista, ideal para uso diario.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/406823354613?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xAoU8GkA8Ew0vDqLXSvGl1mzOkdkRAacM1JIkgNMlnkrwSSR8uS2VcAOIjNws%2FibZ9NxJ3%2BXTnGBGHDoSVRXvR6oq6TtVVjmoxF4H1rUwSF3WJcMkMDpm5EFOLoXF82Xd6G4NFBQz7v%2FJMSiQri4gcGav%2F1VlDp%2Bz2HfSOsGKvfMC9w1kd3I4WFPjsC6Hn916I%3D&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="card">
+        <div class="card-img">🍃</div>
+        <div class="card-body">
+          <span class="cat">Collares</span>
+          <h3>Colgante Botánico en Oro</h3>
+          <p class="desc">Hoja delicada en acero dorado, estética natural.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/277754768044?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xA7AuAgLvI0ybXvcgeA0cJeA1kI9bb2bz%2F0lvbYcbLHwC%2FA1zuwuEe7zeDLzwFq4dDtYQEqSjhk3LtY8%2B3d80p4dPbb0FpNXuhNETlSESyQRT1ZPW0f9jM1vlJGO4SHuiN5s7wbAYCvC5k2T9hsc3IgN6%2Bd4hOQuMBISsqE7eDaIo6GIJEyIyp8YuJmzADTk9M%3D&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 4 -->
+      <div class="card">
+        <div class="card-img">✨</div>
+        <div class="card-body">
+          <span class="cat">Pulseras</span>
+          <h3>Set de Pulseras en Capas</h3>
+          <p class="desc">3 piezas para combinar, largo ajustable.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/406190710649?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xDEwYV0wNaE2zSXuQgzaUj1Eqxv3kf7YVLEVSL1UQYPXxmYG57OFIUtl8ra0pw%2BIntPekA10Npe8kGqPKXy0%2BYrm4ivdLAiHT0MR8zrAtd%2FctWbUZHdikiid96GL5NLaerJi%2BMkFzsIYR%2FmN7dOSE4%2FSAfCqETQwxtsIGCjd37pahffkDoS%2FH8ZWFf10kyKoKI%3D&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 5 -->
+      <div class="card">
+        <div class="card-img">💎</div>
+        <div class="card-body">
+          <span class="cat">Aretes</span>
+          <h3>Aretes Delicados de Perla</h3>
+          <p class="desc">Elegancia atemporal para cualquier ocasión.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/283942843868?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xAA5LMUSVaA%2By%2BnlUAmzqAWyu33tEunbmatXbBQXKSFBCJA04g%2FxIOXCk37sUlNmRxloboWP96N4gNNHJ%2FBgUIoFpaMz2kt6561lK66Tato%2BwzOpGtyNuHdMe8qvHTFK4xrq25BSKZDV3MzDA%2B2hLHpYp4CYmZhKIs0V20Z9T3BKJnYCWrsOUkRo4LBjBbBfkY%3D&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 6 -->
+      <div class="card">
+        <div class="card-img">⌚</div>
+        <div class="card-body">
+          <span class="cat">Relojes</span>
+          <h3>Reloj Clásico Minimalista</h3>
+          <p class="desc">Correa de cuero, esfera elegante unisex.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/398208633266?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 7 -->
+      <div class="card">
+        <div class="card-img">💍</div>
+        <div class="card-body">
+          <span class="cat">Anillos</span>
+          <h3>Anillo Halo Flor Moissanita</h3>
+          <p class="desc">Plata 925 chapada en oro blanco 18K, diseño halo con moissanita.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/377286090097?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTO 8 -->
+      <div class="card">
+        <div class="card-img">🌟</div>
+        <div class="card-body">
+          <span class="cat">Aretes</span>
+          <h3>Aros Dorados Doble Torcido</h3>
+          <p class="desc">Chapado en oro 14K bicolor, cierre click-top, estilo statement.</p>
+          <div class="card-footer">
+            <span class="price">Ver precio en eBay</span>
+            <a href="https://www.ebay.com/itm/127579675377?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339174446&customid=&toolid=10001&mkevt=1" class="card-btn" target="_blank" rel="noopener">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== TRUST STRIP ===================== -->
+  <section class="trust">
+    <div class="trust-grid">
+      <div>
+        <h4>Envío Confiable</h4>
+        <p>Todos los productos se compran directamente en eBay, con la protección al comprador de eBay.</p>
+      </div>
+      <div>
+        <h4>Pago Seguro</h4>
+        <p>Tu compra se procesa 100% en la plataforma oficial de eBay.</p>
+      </div>
+      <div>
+        <h4>Selección Curada</h4>
+        <p>Cada pieza fue elegida a mano por tendencia y calidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p class="disclosure">Como afiliada de eBay Partner Network, puedo ganar una comisión por las compras que califiquen realizadas a través de los enlaces de esta página, sin costo adicional para ti.</p>
+    <p>© 2026 Colección Selecta. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
