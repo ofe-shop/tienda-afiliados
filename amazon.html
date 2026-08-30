@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Bestsellers | Los Favoritos de Todos</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f7f7f5; color:#111826; }
+  header { background: linear-gradient(135deg,#232f3e,#131921); padding: 70px 20px 90px; text-align:center; color:#fff; }
+  header .eyebrow { letter-spacing:3px; font-size:13px; font-weight:700; opacity:.75; margin-bottom:14px; color:#ff9900; }
+  header h1 { font-size: 40px; max-width:720px; margin:0 auto 18px; line-height:1.25; }
+  header p { max-width:560px; margin:0 auto 28px; font-size:17px; opacity:.85; }
+  header a.cta { display:inline-block; background:#ff9900; color:#131921; padding:14px 34px; border-radius:30px; text-decoration:none; font-weight:700; box-shadow:0 8px 20px rgba(255,153,0,.35); }
+  .pills { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:-45px; padding: 0 20px 40px; }
+  .pill { background:#fff; border:1px solid #e5decf; color:#c7511f; padding:10px 20px; border-radius:20px; font-size:14px; font-weight:600; box-shadow:0 4px 10px rgba(0,0,0,.05);}
+  main { max-width: 1080px; margin: 0 auto; padding: 10px 20px 60px; }
+  .section-title { text-align:center; margin: 40px 0 10px; font-size:28px; color:#131921;}
+  .section-sub { text-align:center; color:#565959; margin-bottom:36px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:26px; }
+  .card { background:#fff; border-radius:16px; padding:26px; box-shadow:0 6px 20px rgba(19,25,33,.10); display:flex; flex-direction:column; }
+  .card .emoji { font-size:40px; margin-bottom:14px; }
+  .card .cat { font-size:12px; font-weight:700; letter-spacing:1px; color:#c7511f; margin-bottom:6px;}
+  .card h3 { font-size:18px; margin-bottom:10px; color:#0f1111; line-height:1.35;}
+  .card p.desc { font-size:14px; color:#565959; margin-bottom:16px; flex-grow:1; }
+  .card .rating { font-size:13px; color:#007185; font-weight:700; margin-bottom:10px; }
+  .price-row { display:flex; align-items:baseline; gap:8px; margin-bottom:16px; }
+  .price { font-size:22px; font-weight:800; color:#B12704; }
+  .commission { font-size:12px; color:#0f6b3a; font-weight:700; background:#e6f4ea; padding:3px 10px; border-radius:10px; }
+  .btns { display:flex; gap:10px; }
+  .btn { flex:1; text-align:center; padding:12px 10px; border-radius:10px; font-weight:700; font-size:14px; text-decoration:none; }
+  .btn-primary { background:#ff9900; color:#131921; }
+  .btn-secondary { background:#f0f2f2; color:#131921; border:1px solid #d5d9d9; }
+  .trust { background:#eef1f4; padding:50px 20px; margin-top:50px; }
+  .trust-grid { max-width:900px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:30px; text-align:center; }
+  .trust-grid .ic { font-size:30px; margin-bottom:10px; }
+  .trust-grid h4 { font-size:16px; margin-bottom:8px; color:#131921; }
+  .trust-grid p { font-size:14px; color:#565959; }
+  footer { text-align:center; padding:36px 20px; font-size:12px; color:#6f7373; background:#f7f7f5; }
+  footer p { max-width:600px; margin:0 auto 8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">AMAZON BESTSELLERS</div>
+  <h1>Los Favoritos de Todos, en un Solo Lugar</h1>
+  <p>Selección de los productos más vendidos y mejor calificados de Amazon — miles de reseñas reales que respaldan cada elección. Calidad probada, envío rápido con Prime.</p>
+  <a class="cta" href="#coleccion">Ver la Colección</a>
+</header>
+
+<div class="pills">
+  <div class="pill">HOGAR</div>
+  <div class="pill">BELLEZA</div>
+  <div class="pill">COCINA</div>
+  <div class="pill">TECNOLOGÍA</div>
+</div>
+
+<main id="coleccion">
+  <div class="section-title">Los Más Vendidos</div>
+  <div class="section-sub">Productos con miles de reseñas de 4.6 estrellas o más</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="emoji">⚖️</div>
+      <div class="cat">COCINA</div>
+      <h3>Etekcity Báscula Digital de Cocina, 11lb</h3>
+      <p class="desc">Función tara, ideal para hornear, dietas, meal prep y joyería. Acero inoxidable 304. La báscula más vendida de Amazon.</p>
+      <div class="rating">★ 4.6 · 176,780 reseñas</div>
+      <div class="price-row"><span class="price">$13.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/46sqamG" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/46sqamG" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌡️</div>
+      <div class="cat">COCINA</div>
+      <h3>Alpha Grillers Termómetro Digital de Cocina</h3>
+      <p class="desc">Lectura instantánea en 1-2 segundos, pantalla retroiluminada, resistente al agua (IP67). Precalibrado y listo para usar.</p>
+      <div class="rating">★ 4.8 · 91,633 reseñas</div>
+      <div class="price-row"><span class="price">$12.31</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/3SyVEnZ" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/3SyVEnZ" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🥤</div>
+      <div class="cat">HIDRATACIÓN</div>
+      <h3>HydroJug Traveler 40oz, Vaso Térmico con Asa</h3>
+      <p class="desc">Aislamiento de triple pared, tapa con popote abatible, a prueba de fugas. Mantiene tu bebida fría por horas. #1 en su categoría.</p>
+      <div class="rating">★ 4.6 · 18,149 reseñas</div>
+      <div class="price-row"><span class="price">$31.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/4xt0QbY" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/4xt0QbY" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">💧</div>
+      <div class="cat">HIDRATACIÓN</div>
+      <h3>Owala FreeSip Botella de Agua 24oz</h3>
+      <p class="desc">Bebe con popote integrado o directo del pico. A prueba de fugas, acero inoxidable, mantiene tu bebida fría hasta 24 horas.</p>
+      <div class="rating">★ 4.6 · 135,932 reseñas</div>
+      <div class="price-row"><span class="price">$29.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/4gAVAvL" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/4gAVAvL" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧴</div>
+      <div class="cat">BELLEZA</div>
+      <h3>Neutrogena Toallitas Desmaquillantes Micelares</h3>
+      <p class="desc">Paquete de 2 x 25 toallitas a base de plantas. Elimina maquillaje a prueba de agua sin dejar residuo pesado. Sin alcohol.</p>
+      <div class="rating">★ 4.8 · 121,341 reseñas</div>
+      <div class="price-row"><span class="price">$9.97</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/4i3EitO" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/4i3EitO" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧖</div>
+      <div class="cat">BELLEZA</div>
+      <h3>eos Loción Corporal Vanilla Cashmere, 16oz</h3>
+      <p class="desc">Hidratación de 24 horas con manteca y aceite de karité. Fórmula ligera de rápida absorción, sin sensación grasosa. #1 en su categoría.</p>
+      <div class="rating">★ 4.7 · 74,580 reseñas</div>
+      <div class="price-row"><span class="price">$9.97</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/3T5QVu2" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/3T5QVu2" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧻</div>
+      <div class="cat">BELLEZA</div>
+      <h3>Clean Skin Club Toallas Faciales XL, 50 Ct</h3>
+      <p class="desc">Toallas desechables 100% biobasadas, ultra suaves. Aceptadas por la Asociación de Eczema. Removedor de maquillaje sin irritación.</p>
+      <div class="rating">★ 4.7 · 50,534 reseñas</div>
+      <div class="price-row"><span class="price">$17.95</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/4i3KrGd" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/4i3KrGd" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">📺</div>
+      <div class="cat">TECNOLOGÍA</div>
+      <h3>Amazon Fire TV Stick 4K Plus</h3>
+      <p class="desc">Búsqueda con IA, Wi-Fi 6, Dolby Vision y Atmos. Miles de películas y series gratis y en vivo. El streaming favorito de Amazon.</p>
+      <div class="rating">★ 4.6 · 113,467 reseñas</div>
+      <div class="price-row"><span class="price">$39.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://amzn.to/3SE0Uqb" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://amzn.to/3SE0Uqb" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="trust">
+  <div class="trust-grid">
+    <div>
+      <div class="ic">🚚</div>
+      <h4>Envío Rápido Prime</h4>
+      <p>Todos los productos se compran directamente en Amazon, con envío y protección al comprador.</p>
+    </div>
+    <div>
+      <div class="ic">⭐</div>
+      <h4>Reseñas Reales</h4>
+      <p>Cada producto tiene miles de calificaciones verificadas de otros compradores.</p>
+    </div>
+    <div>
+      <div class="ic">🏆</div>
+      <h4>Selección Curada</h4>
+      <p>Elegimos solo los más vendidos y mejor valorados en cada categoría.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Como Afiliada de Amazon Associates, puedo ganar una comisión por las compras que califiquen realizadas a través de los enlaces de esta página, sin costo adicional para ti.</p>
+  <p>© 2026 Amazon Bestsellers. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
