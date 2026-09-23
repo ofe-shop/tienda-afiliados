@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mascotas | Los Favoritos de Perros y Gatos</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f7f7f5; color:#111826; }
+  header { background: linear-gradient(135deg,#232f3e,#131921); padding: 70px 20px 90px; text-align:center; color:#fff; }
+  header .eyebrow { letter-spacing:3px; font-size:13px; font-weight:700; opacity:.75; margin-bottom:14px; color:#ff9900; }
+  header h1 { font-size: 40px; max-width:720px; margin:0 auto 18px; line-height:1.25; }
+  header p { max-width:560px; margin:0 auto 28px; font-size:17px; opacity:.85; }
+  header a.cta { display:inline-block; background:#ff9900; color:#131921; padding:14px 34px; border-radius:30px; text-decoration:none; font-weight:700; box-shadow:0 8px 20px rgba(255,153,0,.35); }
+  .pills { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:-45px; padding: 0 20px 40px; }
+  .pill { background:#fff; border:1px solid #e5decf; color:#c7511f; padding:10px 20px; border-radius:20px; font-size:14px; font-weight:600; box-shadow:0 4px 10px rgba(0,0,0,.05);}
+  main { max-width: 1080px; margin: 0 auto; padding: 10px 20px 60px; }
+  .section-title { text-align:center; margin: 40px 0 10px; font-size:28px; color:#131921;}
+  .section-sub { text-align:center; color:#565959; margin-bottom:36px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:26px; }
+  .card { background:#fff; border-radius:16px; padding:26px; box-shadow:0 6px 20px rgba(19,25,33,.10); display:flex; flex-direction:column; position:relative; }
+  .card .emoji { font-size:40px; margin-bottom:14px; }
+  .card .cat { font-size:12px; font-weight:700; letter-spacing:1px; color:#c7511f; margin-bottom:6px;}
+  .card h3 { font-size:18px; margin-bottom:10px; color:#0f1111; line-height:1.35;}
+  .card p.desc { font-size:14px; color:#565959; margin-bottom:16px; flex-grow:1; }
+  .card .rating { font-size:13px; color:#007185; font-weight:700; margin-bottom:10px; }
+  .price-row { display:flex; align-items:baseline; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+  .price { font-size:22px; font-weight:800; color:#B12704; }
+  .old-price { font-size:14px; color:#565959; text-decoration:line-through; }
+  .commission { font-size:12px; color:#0f6b3a; font-weight:700; background:#e6f4ea; padding:3px 10px; border-radius:10px; }
+  .badge { position:absolute; top:16px; right:16px; background:#ff9900; color:#131921; font-size:11px; font-weight:800; padding:4px 10px; border-radius:10px; letter-spacing:.5px; }
+  .btns { display:flex; gap:10px; }
+  .btn { flex:1; text-align:center; padding:12px 10px; border-radius:10px; font-weight:700; font-size:14px; text-decoration:none; }
+  .btn-primary { background:#ff9900; color:#131921; }
+  .btn-secondary { background:#f0f2f2; color:#131921; border:1px solid #d5d9d9; }
+  .trust { background:#eef1f4; padding:50px 20px; margin-top:50px; }
+  .trust-grid { max-width:900px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:30px; text-align:center; }
+  .trust-grid .ic { font-size:30px; margin-bottom:10px; }
+  .trust-grid h4 { font-size:16px; margin-bottom:8px; color:#131921; }
+  .trust-grid p { font-size:14px; color:#565959; }
+  footer { text-align:center; padding:36px 20px; font-size:12px; color:#6f7373; background:#f7f7f5; }
+  footer p { max-width:600px; margin:0 auto 8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">MASCOTAS · PERROS Y GATOS</div>
+  <h1>Lo Mejor para tu Mejor Amigo</h1>
+  <p>Productos con miles de reseñas verificadas para consentir y cuidar a tu perro o gato: alimentación, higiene, descanso y diversión, todo en un solo lugar.</p>
+  <a class="cta" href="#coleccion">Ver la Colección</a>
+</header>
+
+<div class="pills">
+  <div class="pill">ALIMENTACIÓN</div>
+  <div class="pill">HIGIENE</div>
+  <div class="pill">DESCANSO</div>
+  <div class="pill">JUGUETES</div>
+  <div class="pill">SEGURIDAD</div>
+  <div class="pill">ACCESORIOS</div>
+</div>
+
+<main id="coleccion">
+  <div class="section-title">Los Favoritos de Perros y Gatos</div>
+  <div class="section-sub">Productos con miles de reseñas de 4.3 estrellas o más</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <span class="badge">SEGURIDAD</span>
+      <div class="emoji">🏷️</div>
+      <div class="cat">IDENTIFICACIÓN</div>
+      <h3>Ring Pet Tag con Código QR</h3>
+      <p class="desc">Placa inteligente con QR: alertas en tiempo real cuando escanean a tu mascota y perfil compartible. Sin suscripciones ni cuotas.</p>
+      <div class="rating">★ 4.5 · 5,227 reseñas</div>
+      <div class="price-row"><span class="price">$9.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B0BLXHWPLP?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B0BLXHWPLP?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">AMAZON'S CHOICE</span>
+      <div class="emoji">🐱</div>
+      <div class="cat">ALIMENTACIÓN</div>
+      <h3>INABA Churu Snacks Cremosos para Gatos, 120 Tubos</h3>
+      <p class="desc">Puré cremoso y lamible con Vitamina E, sabor pollo. 91% humedad y bajo en calorías. El snack favorito de los gatos en Amazon.</p>
+      <div class="rating">★ 4.9 · 3,462 reseñas</div>
+      <div class="price-row"><span class="price">$50.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B0CW6NFJKM?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B0CW6NFJKM?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">#1 BEST SELLER</span>
+      <div class="emoji">💩</div>
+      <div class="cat">HIGIENE</div>
+      <h3>Earth Rated Bolsas para Popó, 600 Bolsas</h3>
+      <p class="desc">Bolsas extra largas, extra resistentes y 100% a prueba de fugas. Hechas con 65% de plástico reciclado post-consumo.</p>
+      <div class="rating">★ 4.8 · 250,023 reseñas</div>
+      <div class="price-row"><span class="price">$25.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B0CS8GCYS1?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B0CS8GCYS1?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧴</div>
+      <div class="cat">HIGIENE</div>
+      <h3>Bodhi Dog Toallitas de Limpieza, 60 Unidades</h3>
+      <p class="desc">Toallitas grandes y gruesas que eliminan olores y refrescan el pelaje. Sin parabenos ni SLS, aroma a lavanda.</p>
+      <div class="rating">★ 4.3 · 925 reseñas</div>
+      <div class="price-row"><span class="price">$9.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B06XC9BWPD?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B06XC9BWPD?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">#1 BEST SELLER</span>
+      <div class="emoji">🐾</div>
+      <div class="cat">HIGIENE</div>
+      <h3>Amazon Basics Tapetes de Entrenamiento, 100 Unidades</h3>
+      <p class="desc">Tapetes a prueba de fugas con diseño de 5 capas de absorción rápida. Ideales para cachorros, perros mayores o viajes.</p>
+      <div class="rating">★ 4.4 · 220,826 reseñas</div>
+      <div class="price-row"><span class="price">$19.20</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B00MW8G62E?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B00MW8G62E?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">#1 EN CEPILLOS</span>
+      <div class="emoji">🪮</div>
+      <div class="cat">HIGIENE</div>
+      <h3>Swihauk Cepillo Autolimpiante Anti-Caída</h3>
+      <p class="desc">Cepillo deslanador con botón de auto-limpieza, cerdas suaves con la piel. Ideal para perros y gatos con mucho pelo.</p>
+      <div class="rating">★ 4.6 · 14,114 reseñas</div>
+      <div class="price-row"><span class="price">$14.99</span><span class="old-price">$19.99</span><span class="commission">-25%</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B0CLLPVZRV?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B0CLLPVZRV?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🥣</div>
+      <div class="cat">ALIMENTACIÓN</div>
+      <h3>Kacoomi Dispensador Automático de Comida y Agua</h3>
+      <p class="desc">Set de comedero y bebedero por gravedad de gran capacidad (1 galón x 2). Perfecto para viajes o días fuera de casa.</p>
+      <div class="rating">★ 4.4 · 5,857 reseñas</div>
+      <div class="price-row"><span class="price">$29.99</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B09DYB6BKT?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B09DYB6BKT?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">#1 EN CAMAS</span>
+      <div class="emoji">🛏️</div>
+      <div class="cat">DESCANSO</div>
+      <h3>Bedsure Cama Donut Calmante para Gatos, 20"</h3>
+      <p class="desc">Cama redonda de piel sintética ultra suave, premiada por Oprah Daily. Borde elevado y base antideslizante para un sueño profundo.</p>
+      <div class="rating">★ 4.6 · 26,846 reseñas</div>
+      <div class="price-row"><span class="price">$19.99</span><span class="old-price">$25.99</span><span class="commission">-23%</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B08PQQ2FHQ?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B08PQQ2FHQ?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="badge">#1 BEST SELLER</span>
+      <div class="emoji">🧼</div>
+      <div class="cat">HIGIENE</div>
+      <h3>POOPH Eliminador de Olores de Mascotas, 32 oz</h3>
+      <p class="desc">Elimina olores de superficies, muebles, tapetes y vehículos. Fórmula segura sin fragancia, apta para el hogar.</p>
+      <div class="rating">★ 4.5 · 8,969 reseñas</div>
+      <div class="price-row"><span class="price">$21.97</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B0G8475551?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B0G8475551?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🦴</div>
+      <div class="cat">JUGUETES</div>
+      <h3>KONG Classic Juguete Rellenable para Perros (Pack de 2)</h3>
+      <p class="desc">El juguete de hule natural más recomendado por veterinarios. Rebote errático, se puede rellenar con premios. Apto para lavavajillas.</p>
+      <div class="rating">★ 4.6 · 93,447 reseñas</div>
+      <div class="price-row"><span class="price">$16.92</span><span class="commission">Amazon</span></div>
+      <div class="btns">
+        <a class="btn btn-secondary" href="https://www.amazon.com/dp/B0F7K64WF6?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Ver precio</a>
+        <a class="btn btn-primary" href="https://www.amazon.com/dp/B0F7K64WF6?tag=ofeshoptienda-20" target="_blank" rel="nofollow sponsored">Comprar</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="trust">
+  <div class="trust-grid">
+    <div>
+      <div class="ic">🚚</div>
+      <h4>Envío Rápido Prime</h4>
+      <p>Todos los productos se compran directamente en Amazon, con envío y protección al comprador.</p>
+    </div>
+    <div>
+      <div class="ic">⭐</div>
+      <h4>Reseñas Reales</h4>
+      <p>Cada producto tiene miles de calificaciones verificadas de otros dueños de mascotas.</p>
+    </div>
+    <div>
+      <div class="ic">🐾</div>
+      <h4>Selección Curada</h4>
+      <p>Elegimos solo los productos mejor valorados para el bienestar de tu perro o gato.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Como Afiliada de Amazon Associates, puedo ganar una comisión por las compras que califiquen realizadas a través de los enlaces de esta página, sin costo adicional para ti.</p>
+  <p>© 2026 Mascotas. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
